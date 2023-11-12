@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math JS</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+        <form name="forma">
+            <fieldset>
+                Сторона 1 <input type="text" size="8" maxlength="8" name="st1"><br><br>
+                Сторона 2 <input type="text" size="8" maxlength="8" name="st2"><br><br>
+                Сторона 3 <input type="text" size="8" maxlength="8" name="st3"><br><br>
+
+                <input type="button" value="Вычислить" onclick="areaOfTriangle(forma);">
+                <input type="reset" value="Отменить"><br><br>
+                Результат <input type="text" size="8" maxlength="8" name="res"><p></p>
+        </fieldset>
+        </form>
+
+        <form name="forma1">
+            <fieldset>
+                Сторона 1 <input type="text" size="8" maxlength="8" name="side1"><br><br>
+                Сторона 2 <input type="text" size="8" maxlength="8" name="side2"><br><br>
+                Сторона 3 <input type="text" size="8" maxlength="8" name="side3"><br><br>
+                
+                <input type="button" value="Вычислить число между min и max" onclick="middle(forma1);">
+                <input type="reset" value="Отменить"><br><br>
+                Результат <input type="text" size="8" maxlength="8" name="result"><p></p>
+            </fieldset>
+        </form>
+
+        <form name="forma2">
+            <fieldset>
+                a <input type="text" size="8" maxlength="8" name="coefficient1"><br><br>
+                b <input type="text" size="8" maxlength="8" name="coefficient2"><br><br>
+                c <input type="text" size="8" maxlength="8" name="coefficient3"><br><br>
+                <input type="button" value="Вычислить квадратное уравнение" onclick="equation(forma2);">
+                <input type="reset" value="Отменить"><br><br>
+                Результат <input type="text" size="45" maxlength="8" name="resultat"><p></p>
+            </fieldset>
+        </form>
+    </div>
+    <style>
+       form fieldset:first-child {
+            width: 450px;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        form {
+            margin: 10px;
+        }
+    </style>
+</body>
+</html>
